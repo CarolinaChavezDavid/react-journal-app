@@ -14,17 +14,20 @@ export const AuthLayout = ({children, title}) => {
 
         <Grid item
             className='box-shadow'
+            alignItems="center"
+            justifyContent="center"
             xs={3}
             sx={{
                     width: {sm: 450},
-                    backgroundColor: "white", 
                     padding: 3,
-                    borderRadius: 2
+                    borderRadius: 2,
+                    backgroundColor: "white"
                  }}>
-                <Typography variant='h5' sx={{mb: 1}}> { title }</Typography>
+                <Typography variant='h5' sx={{mb: 1}} > { title }</Typography>
+                { children }
         </Grid>
 
-        { children }
+       
     </Grid>
   )
 }
